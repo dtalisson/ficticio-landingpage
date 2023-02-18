@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap');
+/* CONFIGURAÇÕES  */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header { 
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.imgLogo { 
+    width: 9rem;
+    margin: -1px 0rem;
+    align-items: center;
+}
+
+.lista { 
+    display: flex;
+    align-items: center;
+}
+
+.lista li { 
+    margin: 0px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+}
+.lista li a { 
+    color: #a19f9f;
+    text-shadow: rgba(207, 204, 204, 0.788) 0.1em 0.1em 0.2em
+
+    }
+
+#container-apple { 
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}   
+.container-img { 
+    width: 60%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+.container-conteudo { 
+    display:Flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    align-items: center;
+}
+#appleSerie { 
+    font-size: 3rem;     
+}
+.maca { 
+    display: flex;
+    margin: 0px auto;
+    text-align: center;
+    justify-content: center;
+}
+.watch { 
+    font-size: 2rem;
+    margin-top: 0.2rem;
+}
+.watchName { 
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(173, 0, 0);
+    font-size: 1rem;
+}
+
+
+.container-conteudo p { 
+    font-size: 2rem;
+    text-align:center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/*  PRIMEIRA SEÇÃO */
+
+#container-details { 
+    margin-top:10rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+.container-details-conteudo { 
+    margin:2rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+
+}
+.container-details-conteudo p { 
+    font-size: 1.7rem;
+    width: 50%;
+    font-weight: 500;
+}
+.container-details-imagem { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgDetails { 
+    max-width: 100%;
+    
+}
+/*  SEGUNDA SEÇÃO  */
+
+#container-specs { 
+    width: 100%;
+    padding-top:2rem;
+    display:flex;
+    flex-direction: column;
+    background-color: brown
+}
+.container-specs-img { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-specs { 
+    max-width: 90%;
+}
+
+.container-specs-conteudo { 
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top:0.5rem
+    
+}
+.container-specs-conteudo h1 { 
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+@media (max-width: 500px) { 
+    header { 
+        flex-direction: column;
+
+    }
+    .imgLogo { 
+        width: 150px;
+        margin: auto;
+    }
+    .lista { 
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+        font-size: 1.1rem;
+        
+    }    
+}
+@media (max-width: 767px) { 
+    #container-apple { 
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column
+    }   
+    .container-img { 
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+    }
+    .fotoImg { 
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    .container-conteudo { 
+        display:Flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    #appleSerie { 
+        margin-top: 2px;
+        text-align: center;
+
+    }
+    .maca { 
+        display: flex;
+        margin: 0px auto;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .watchName { 
+        font-weight: bold;
+        color: rgb(190, 1, 1);
+        margin-left: 20px;
+    }
+    .container-conteudo p { 
+        font-size: 2rem;
+        text-align:center;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    #container-details { 
+        flex-direction: column
+}
+}
+@media (min-width: 767px) { 
+    #container-details { 
+        display: flex;
+        flex-direction: row;
+    }
+    .container-details-conteudo { 
+        align-items: center;
+        justify-content: center;
+        margin-top:3rem
+    }
+    #container-specs { 
+        flex-direction: row;
+    }
+    .container-specs-conteudo h1 { 
+        padding: 3rem;
+    }
+}
+@media ( min-width:1280px) { 
+    #container-details { 
+        width: 100%;
+    }
+    .container-details-conteudo { 
+        width: 100%;
+        margin: auto 7rem;
+    }
+    .container-specs-conteudo h1 { 
+        padding: 7rem;
+    }
+}
+@media (max-width: 1280px) { 
+    .container-conteudo { 
+        display:Flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .maca { 
+        display: flex;
+        margin: 0px auto;
+    }
+    .watchName { 
+        font-weight: bold;
+        text-align: center;
+        color: rgb(173, 0, 0);
+        font-size: 1rem;
+        margin-left: 25px;
+    }
+    .container-conteudo p { 
+        font-size: 1.7rem;
+        text-align:center;
+        margin-top: 20px;
+        font-weight: 500;
+    } 
+}
+
+/*  MEDIA QUERIES */
