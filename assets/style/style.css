@@ -9,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 header { 
     max-width: 100%;
     display: flex;
@@ -94,10 +95,11 @@ header {
 /*  PRIMEIRA SEÇÃO */
 
 #container-details { 
-    margin-top:10rem;
     width: 100%;
+    margin: auto;
     text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: antiquewhite;
 }
@@ -130,6 +132,7 @@ header {
 #container-specs { 
     width: 100%;
     padding-top:2rem;
+    margin: auto;
     display:flex;
     flex-direction: column;
     background-color: brown
@@ -141,7 +144,7 @@ header {
     justify-content: center;
 }
 .img-specs { 
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .container-specs-conteudo { 
